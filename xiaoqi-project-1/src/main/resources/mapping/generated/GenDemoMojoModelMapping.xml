@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.big.mappers.generated.GenDemoMojoModelMapper">
+  <resultMap id="DemoMojoModelResultMap" type="com.big.models.DemoMojoModel">
+    <result property="id" column="id" />
+  </resultMap>
+  <select id="find" parameterType="Map" resultMap="DemoMojoModelResultMap">
+    select * from t_demo_mojo
+    <where>
+      <if test="id != null">AND id = #{id}</if>
+    </where>
+    <if test="orderBy != null and orderBy.fields != null and orderBy.sort != null">
+      ORDER BY
+      <foreach collection="orderBy.fields" item="field" separator=",">${field}</foreach>
+      ${orderBy.sort}
+    </if>
+    <if test="pageable != null and pageable.start != null and pageable.end != null">limit #{pageable.start}, #{pageable.end}</if>
+  </select>
+  <select id="getTotal" parameterType="Map" resultType="Long">
+    select count(*) from t_demo_mojo
+    <where>
+      <if test="id != null">AND id = #{id}</if>
+    </where>
+  </select>
+</mapper>

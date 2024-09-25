@@ -1,0 +1,8 @@
+# minio服务器
+minio-config:
+  endpoint: 192.168.19.192
+  port: 32590
+  accessKey: admin
+  secretKey: aicm@2022
+  bucketName: aicm
+  secure: false

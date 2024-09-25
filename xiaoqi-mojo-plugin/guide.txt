@@ -1,0 +1,5 @@
+要使用debug 测试maven插件是否成功
+ 点击左上角 edit configurations
+ 添加debug 指定一个端口为 8000 这个端口随便
+ 选择指定的项目 当前为xiaoqi-mojo-plugin
+ 找到maven 控件debug 运行  就能呗监听到

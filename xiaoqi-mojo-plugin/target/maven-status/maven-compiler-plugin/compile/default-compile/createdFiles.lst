@@ -1,0 +1,13 @@
+com\big\MojoConstants.class
+com\big\plugin\gen\xml\MappingWriter.class
+com\big\orm\MyCustomMojo.class
+com\big\plugin\gen\xml\MappingWriter$NoOpEntityResolver.class
+com\big\plugin\service\impl\MapperWriter.class
+com\big\plugin\nums\VisibilityEnum.class
+com\big\plugin\service\ClassWriter.class
+com\big\plugin\utils\ReflectionUtil.class
+com\big\plugin\nums\ClassTypeEnum.class
+com\big\plugin\service\CodeWriter.class
+com\big\plugin\gen\java\JavaFile.class
+com\big\plugin\service\impl\MethodWriter.class
+com\big\plugin\utils\AutoGenUtil.class
